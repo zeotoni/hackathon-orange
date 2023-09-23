@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './pages/home/home.component';
 import { AddEventComponent } from './pages/add-event/add-event.component';
 import { LoginComponent } from './pages/login/login.component';
+import { DetailsComponent } from './pages/details/details.component';
 
 const routes: Routes = [
   {
@@ -27,7 +28,7 @@ const routes: Routes = [
   },
   {
     path: 'details',
-    component: LoginComponent,
+    component: DetailsComponent,
     title: 'Detalhes do Evento'
   }
 ];
