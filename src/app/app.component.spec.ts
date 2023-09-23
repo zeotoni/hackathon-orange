@@ -3,6 +3,7 @@ import { RouterTestingModule } from '@angular/router/testing';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './shared/components/header/header.component';
 import { ContainerComponent } from './shared/components/container/container.component';
+import { FooterComponent } from './shared/components/footer/footer.component';
 
 describe('AppComponent', () => {
   beforeEach(async () => {
@@ -13,7 +14,8 @@ describe('AppComponent', () => {
       declarations: [
         AppComponent,
         HeaderComponent,
-        ContainerComponent
+        ContainerComponent,
+        FooterComponent
       ],
     }).compileComponents();
   });
