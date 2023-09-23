@@ -1,0 +1,73 @@
+form {
+  margin: 0 auto;
+  display: block;
+  app-container {
+
+    .inner-container {
+      padding: 32px;
+
+      fieldset {
+        border: none;
+        display: flex;
+        flex-wrap: wrap;
+        width: 80%;
+        padding-bottom: 30px;
+
+        legend, label {
+          color: #000;
+          font-family: Roboto;
+          font-size: 24px;
+          font-weight: 400;
+          margin-bottom: 18px;
+        }
+
+        li {
+          list-style: none;
+          margin-right: 30px;
+
+          input, textarea {
+            display: block;
+            margin: 10px 0 16px;
+            border-radius: 10px;
+            background: #F0F0F0;
+            padding: 17px;
+            border: none;
+            outline: none;
+            font-size: 14px;
+
+            &::placeholder {
+              color: #585858;
+              font-family: Roboto;
+              font-size: 22px;
+              font-weight: 400;
+            }
+
+          }
+          .inputName {
+            width: 650px;
+          }
+
+          .inputImage {
+            width: 500px;
+          }
+        }
+      }
+
+      .fildset-checkbox {
+        li {
+          display: flex;
+          flex-direction: row-reverse;
+          align-items: baseline;
+          gap: 10px;
+
+          input[type=checkbox] {
+            width: 18px;
+            height: 18px;
+          }
+        }
+      }
+    }
+
+
+  }
+}

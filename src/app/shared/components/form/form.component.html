@@ -1,71 +1,74 @@
 <form>
-  <fieldset>
-    <li>
-      <label for="name">Nome do Evento *</label>
-      <input type="text" name="name" id="name">
-    </li>
-    <li>
-      <label for="date">Data *</label>
-      <input type="date" name="date" id="date">
-    </li>
-    <li>
-      <label for="time">Horário: </label>
-      <input type="time" name="time" id="time">
-    </li>
-  </fieldset>
-  <fieldset>
-    <legend>Localidade</legend>
-    <li>
-      <label for="street">Rua *</label>
-      <input type="text" name="street" id="street">
-    </li>
-    <li>
-      <label for="number">Número *</label>
-      <input type="number" name="number" id="number">
-    </li>
-    <li>
-      <label for="state">Estado *</label>
-      <input type="text" name="state" id="state">
-    </li>
-    <li>
-      <label for="cep">Cep *</label>
-      <input type="number" name="cep" id="cep">
-    </li>
-  </fieldset>
-  <fieldset>
-    <legend>Categorias *</legend>
-    <li>
-      <label for="online">Online</label>
-      <input type="checkbox" name="online" id="online">
-    </li>
-    <li>
-      <label for="in-person">Presencial</label>
-      <input type="checkbox" name="in-person" id="in-person">
-    </li>
-    <li>
-      <label for="paid">Pago</label>
-      <input type="checkbox" name="paid" id="paid">
-    </li>
-    <li>
-      <label for="free">Gratuito</label>
-      <input type="checkbox" name="free" id="free">
-    </li>
-  </fieldset>
-  <fieldset>
-    <li>
-      <label for="description">Descrição *</label>
-      <textarea name="description" id="description" cols="30" rows="10"></textarea>
-    </li>
-  </fieldset>
-  <fieldset>
-    <li>
-      <label for="image-link">Descrição *</label>
-      <input type="text" name="image-link" id="image-link">
-    </li>
-  </fieldset>
-
-  <div>
-    <app-button>Adicionar</app-button>
-    <app-button>Excluir</app-button>
+  <app-container class="container">
+  <div class="inner-container">
+    <fieldset>
+      <li>
+        <label for="name">Nome do Evento *</label>
+        <input class="inputName" type="text" name="name" id="name" placeholder="Digite o nome do Evento">
+      </li>
+      <li>
+        <label for="date">Data *</label>
+        <input type="date" name="date" id="date" placeholder="DD/MM/AAAA">
+      </li>
+      <li>
+        <label for="time">Horário: </label>
+        <input type="time" name="time" id="time" placeholder="00:00">
+      </li>
+    </fieldset>
+    <fieldset>
+      <legend>Localidade</legend>
+      <li>
+        <label for="street">Rua *</label>
+        <input type="text" name="street" id="street" placeholder="Digite a rua do evento">
+      </li>
+      <li>
+        <label for="number">Número *</label>
+        <input type="number" name="number" id="number" placeholder="Digite o nº da rua">
+      </li>
+      <li>
+        <label for="city">Número *</label>
+        <input type="text" name="city" id="city" placeholder="Digite  a cidade">
+      </li>
+      <li>
+        <label for="state">Estado *</label>
+        <input type="text" name="state" id="state" placeholder="Digite o estado">
+      </li>
+      <li>
+        <label for="cep">Cep *</label>
+        <input type="number" name="cep" id="cep" placeholder="Digite o CEP">
+      </li>
+    </fieldset>
+    <fieldset class="fildset-checkbox">
+      <legend>Categorias *</legend>
+      <li>
+        <label for="online">Online</label>
+        <input type="checkbox" name="online" id="online">
+      </li>
+      <li>
+        <label for="in-person">Presencial</label>
+        <input type="checkbox" name="in-person" id="in-person">
+      </li>
+      <li>
+        <label for="paid">Pago</label>
+        <input type="checkbox" name="paid" id="paid">
+      </li>
+      <li>
+        <label for="free">Gratuito</label>
+        <input type="checkbox" name="free" id="free">
+      </li>
+    </fieldset>
+    <fieldset>
+      <li>
+        <label for="description">Descrição *</label>
+        <textarea name="description" id="description" cols="57" rows="5" placeholder="Descreva sobre o evento:  o que é, qual o cronograma , etc.."></textarea>
+      </li>
+    </fieldset>
+    <fieldset>
+      <li>
+        <label for="image-link">Imagem *</label>
+        <input type="text" name="image-link" id="image-link" class="inputImage" placeholder="Insira o link da sua imagem">
+      </li>
+    </fieldset>
   </div>
+  </app-container>
 </form>
