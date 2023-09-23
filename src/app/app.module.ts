@@ -11,6 +11,7 @@ import { FormComponent } from './shared/components/form/form.component';
 import { ButtonComponent } from './shared/components/button/button.component';
 import { HomeComponent } from './pages/home/home.component';
 import { AddEventComponent } from './pages/add-event/add-event.component';
+import { LoginComponent } from './pages/login/login.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { AddEventComponent } from './pages/add-event/add-event.component';
     FormComponent,
     ButtonComponent,
     HomeComponent,
-    AddEventComponent
+    AddEventComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
