@@ -19,13 +19,13 @@ export class FormComponent implements OnInit{
       eventName: ['', [Validators.required, Validators.minLength(10)]],
       date: ['', [Validators.required]],
       time: ['', [Validators.required]],
-      street: ['', [Validators.required, Validators.minLength(10)]],
-      number: ['', [Validators.required, Validators.maxLength(4)]],
-      city: ['', [Validators.required, Validators.minLength(3)]],
-      state: ['', [Validators.required, Validators.minLength(5)]],
-      cep: ['', [Validators.required]],
+      street: ['', [Validators.required]],
+      number: ['', [Validators.required]],
+      city: ['', [Validators.required]],
+      state: ['', [Validators.required]],
+      cep: ['', [Validators.required, Validators.pattern(/^\d{5}-?\d{3}$/)]],
       place: ['', [Validators.required]],
-      paiment: ['', [Validators.required]],
+      payment: ['', [Validators.required]],
       description: ['', [Validators.required, Validators.minLength(30)]],
       imageLink: ['', [Validators.required]]
 
@@ -33,7 +33,9 @@ export class FormComponent implements OnInit{
   }
 
   submit(): void {
-    const newEvent = this.registerForm.getRawValue()
-    console.log(newEvent)
+    if(this.registerForm.valid && !this.registerForm.pending) {
+      const newEvent = this.registerForm.getRawValue()
+      console.log(newEvent)
+    }
   }
 }

@@ -1,18 +1,24 @@
-<form [formGroup]="registerForm" (submit)="submit()">
+<form #form="ngForm" [formGroup]="registerForm" (submit)="submit()">
   <app-container class="container">
   <div class="inner-container">
     <fieldset>
       <li>
         <label for="name">Nome do Evento *</label>
         <input formControlName="eventName" class="inputName" type="text" name="name" id="name" placeholder="Digite o nome do Evento">
+        <app-message *ngIf="registerForm.get('eventName')?.errors?.['required'] && (form.submitted || registerForm.get('eventName')?.touched)" text="O campo de nome não pode estar vazio"></app-message>
+        <app-message *ngIf="registerForm.get('eventName')?.errors?.['minlength'] && (form.submitted || registerForm.get('eventName')?.touched)" text="O campo de nome precisa ter no mínimo 10 caracteres"></app-message>
       </li>
       <li>
         <label for="date">Data *</label>
         <input formControlName="date" type="date" name="date" id="date" placeholder="DD/MM/AAAA">
+        <app-message *ngIf="registerForm.get('date')?.errors?.['required'] && (form.submitted || registerForm.get('date')?.touched)" text="O campo de data não pode estar vazio"></app-message>
+
       </li>
       <li>
         <label for="time">Horário: </label>
         <input formControlName="time" type="time" name="time" id="time" placeholder="00:00">
+        <app-message *ngIf="registerForm.get('time')?.errors?.['required'] && (form.submitted || registerForm.get('time')?.touched)" text="O campo de horário não pode estar vazio"></app-message>
+
       </li>
     </fieldset>
     <fieldset>
@@ -20,22 +26,32 @@
       <li>
         <label for="street">Rua *</label>
         <input formControlName="street" type="text" name="street" id="street" placeholder="Digite a rua do evento">
+        <app-message *ngIf="registerForm.get('street')?.errors?.['required'] && (form.submitted || registerForm.get('street')?.touched)" text="O campo de rua não pode estar vazio"></app-message>
+
       </li>
       <li>
         <label for="number">Número *</label>
         <input formControlName="number" type="number" name="number" id="number" placeholder="Digite o nº da rua">
+        <app-message *ngIf="registerForm.get('number')?.errors?.['required'] && (form.submitted || registerForm.get('number')?.touched)" text="O campo de número não pode estar vazio"></app-message>
+
       </li>
       <li>
         <label for="city">Cidade *</label>
         <input formControlName="city" type="text" name="city" id="city" placeholder="Digite  a cidade">
+        <app-message *ngIf="registerForm.get('city')?.errors?.['required'] && (form.submitted || registerForm.get('city')?.touched)" text="O campo de cidade não pode estar vazio"></app-message>
+
       </li>
       <li>
         <label for="state">Estado *</label>
         <input formControlName="state" type="text" name="state" id="state" placeholder="Digite o estado">
+        <app-message *ngIf="registerForm.get('state')?.errors?.['required'] && (form.submitted || registerForm.get('state')?.touched)" text="O campo de estado não pode estar vazio"></app-message>
+
       </li>
       <li>
         <label for="cep">Cep *</label>
-        <input formControlName="cep" type="number" name="cep" id="cep" placeholder="Digite o CEP">
+        <input formControlName="cep" type="text" name="cep" id="cep" placeholder="Digite o CEP">
+        <app-message *ngIf="registerForm.get('cep')?.errors?.['required'] && (form.submitted || registerForm.get('cep')?.touched)" text="O campo de cep não pode estar vazio"></app-message>
+        <app-message *ngIf="registerForm.get('cep')?.errors?.['pattern'] && (form.submitted || registerForm.get('cep')?.touched)" text="O campo cep precisa ter um formato válido"></app-message>
       </li>
     </fieldset>
     <fieldset class="fildset-checkbox">
@@ -50,28 +66,36 @@
           <input formControlName="place" type="radio" value="inPerson" id="inPerson">
         </li>
       </div>
+      <app-message *ngIf="registerForm.get('place')?.errors?.['required'] && (form.submitted || registerForm.get('place')?.touched)" text="O campo de lugar não pode estar vazio"></app-message>
+
 
       <div>
         <li>
           <label for="paid">Pago</label>
-          <input formControlName="paiment" type="radio" value="paid" id="paid">
+          <input formControlName="payment" type="radio" value="paid" id="paid">
         </li>
         <li>
           <label for="free">Gratuito</label>
-          <input formControlName="paiment" type="radio" value="free" id="free">
+          <input formControlName="payment" type="radio" value="free" id="free">
         </li>
       </div>
+      <app-message *ngIf="registerForm.get('payment')?.errors?.['required'] && (form.submitted || registerForm.get('payment')?.touched)" text="O campo de pagamento não pode estar vazio"></app-message>
+
     </fieldset>
     <fieldset>
       <li>
         <label for="description">Descrição *</label>
         <textarea formControlName="description" name="description" id="description" cols="57" rows="5" placeholder="Descreva sobre o evento:  o que é, qual o cronograma , etc.."></textarea>
+        <app-message *ngIf="registerForm.get('description')?.errors?.['required'] && (form.submitted || registerForm.get('description')?.touched)" text="O campo de descrição não pode estar vazio"></app-message>
+        <app-message *ngIf="registerForm.get('description')?.errors?.['minlength'] && (form.submitted || registerForm.get('description')?.touched)" text="A descrição precisa ser maior e bem descritiva"></app-message>
       </li>
     </fieldset>
     <fieldset>
       <li>
         <label for="image-link">Imagem *</label>
         <input formControlName="imageLink" type="url" name="imageLink" id="image-link" class="inputImage" placeholder="Insira o link da sua imagem">
+        <app-message *ngIf="registerForm.get('imageLink')?.errors?.['required'] && (form.submitted || registerForm.get('imageLink')?.touched)" text="O campo de link não pode estar vazio"></app-message>
+
       </li>
     </fieldset>
     <div>

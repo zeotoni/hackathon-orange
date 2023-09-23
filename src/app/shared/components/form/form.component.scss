@@ -35,6 +35,10 @@ form {
             outline: none;
             font-size: 14px;
 
+            &.ng-invalid.ng-touched {
+              border: 2px solid red;
+            }
+
             &::placeholder {
               color: #585858;
               font-family: Roboto;
