@@ -12,6 +12,7 @@ import { HomeComponent } from './pages/home/home.component';
 import { AddEventComponent } from './pages/add-event/add-event.component';
 import { LoginComponent } from './pages/login/login.component';
 import { DetailsComponent } from './pages/details/details.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { DetailsComponent } from './pages/details/details.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
