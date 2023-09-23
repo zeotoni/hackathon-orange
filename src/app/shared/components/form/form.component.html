@@ -1,1 +1,71 @@
-<p>form works!</p>
+<form>
+  <fieldset>
+    <li>
+      <label for="name">Nome do Evento *</label>
+      <input type="text" name="name" id="name">
+    </li>
+    <li>
+      <label for="date">Data *</label>
+      <input type="date" name="date" id="date">
+    </li>
+    <li>
+      <label for="time">Horário: </label>
+      <input type="time" name="time" id="time">
+    </li>
+  </fieldset>
+  <fieldset>
+    <legend>Localidade</legend>
+    <li>
+      <label for="street">Rua *</label>
+      <input type="text" name="street" id="street">
+    </li>
+    <li>
+      <label for="number">Número *</label>
+      <input type="number" name="number" id="number">
+    </li>
+    <li>
+      <label for="state">Estado *</label>
+      <input type="text" name="state" id="state">
+    </li>
+    <li>
+      <label for="cep">Cep *</label>
+      <input type="number" name="cep" id="cep">
+    </li>
+  </fieldset>
+  <fieldset>
+    <legend>Categorias *</legend>
+    <li>
+      <label for="online">Online</label>
+      <input type="checkbox" name="online" id="online">
+    </li>
+    <li>
+      <label for="in-person">Presencial</label>
+      <input type="checkbox" name="in-person" id="in-person">
+    </li>
+    <li>
+      <label for="paid">Pago</label>
+      <input type="checkbox" name="paid" id="paid">
+    </li>
+    <li>
+      <label for="free">Gratuito</label>
+      <input type="checkbox" name="free" id="free">
+    </li>
+  </fieldset>
+  <fieldset>
+    <li>
+      <label for="description">Descrição *</label>
+      <textarea name="description" id="description" cols="30" rows="10"></textarea>
+    </li>
+  </fieldset>
+  <fieldset>
+    <li>
+      <label for="image-link">Descrição *</label>
+      <input type="text" name="image-link" id="image-link">
+    </li>
+  </fieldset>
+
+  <div>
+    <app-button>Adicionar</app-button>
+    <app-button>Excluir</app-button>
+  </div>
+</form>
