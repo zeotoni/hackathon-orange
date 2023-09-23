@@ -2,6 +2,7 @@ import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { FormComponent } from './form.component';
 import { ContainerComponent } from '../container/container.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 describe('FormComponent', () => {
   let component: FormComponent;
@@ -9,7 +10,8 @@ describe('FormComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ FormComponent, ContainerComponent ]
+      declarations: [ FormComponent, ContainerComponent ],
+      imports: [ReactiveFormsModule]
     })
     .compileComponents();
 

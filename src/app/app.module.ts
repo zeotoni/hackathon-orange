@@ -13,6 +13,7 @@ import { AddEventComponent } from './pages/add-event/add-event.component';
 import { LoginComponent } from './pages/login/login.component';
 import { DetailsComponent } from './pages/details/details.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { MessageComponent } from './shared/components/message/message.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { ReactiveFormsModule } from '@angular/forms';
     HomeComponent,
     AddEventComponent,
     LoginComponent,
-    DetailsComponent
+    DetailsComponent,
+    MessageComponent
   ],
   imports: [
     BrowserModule,
