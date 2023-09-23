@@ -10,6 +10,7 @@ import { CardComponent } from './shared/components/card/card.component';
 import { FormComponent } from './shared/components/form/form.component';
 import { ButtonComponent } from './shared/components/button/button.component';
 import { HomeComponent } from './pages/home/home.component';
+import { AddEventComponent } from './pages/add-event/add-event.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { HomeComponent } from './pages/home/home.component';
     CardComponent,
     FormComponent,
     ButtonComponent,
-    HomeComponent
+    HomeComponent,
+    AddEventComponent
   ],
   imports: [
     BrowserModule,
