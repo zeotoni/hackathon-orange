@@ -12,6 +12,7 @@ import { ButtonComponent } from './shared/components/button/button.component';
 import { HomeComponent } from './pages/home/home.component';
 import { AddEventComponent } from './pages/add-event/add-event.component';
 import { LoginComponent } from './pages/login/login.component';
+import { DetailsComponent } from './pages/details/details.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { LoginComponent } from './pages/login/login.component';
     ButtonComponent,
     HomeComponent,
     AddEventComponent,
-    LoginComponent
+    LoginComponent,
+    DetailsComponent
   ],
   imports: [
     BrowserModule,
