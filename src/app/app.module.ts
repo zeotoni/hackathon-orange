@@ -9,6 +9,7 @@ import { ContainerComponent } from './shared/components/container/container.comp
 import { CardComponent } from './shared/components/card/card.component';
 import { FormComponent } from './shared/components/form/form.component';
 import { ButtonComponent } from './shared/components/button/button.component';
+import { HomeComponent } from './pages/home/home.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { ButtonComponent } from './shared/components/button/button.component';
     ContainerComponent,
     CardComponent,
     FormComponent,
-    ButtonComponent
+    ButtonComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
