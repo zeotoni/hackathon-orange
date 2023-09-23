@@ -24,6 +24,11 @@ const routes: Routes = [
     path: 'login',
     component: LoginComponent,
     title: 'Login'
+  },
+  {
+    path: 'details',
+    component: LoginComponent,
+    title: 'Detalhes do Evento'
   }
 ];
 
