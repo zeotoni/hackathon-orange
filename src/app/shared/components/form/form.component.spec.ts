@@ -12,6 +12,7 @@ describe('FormComponent', () => {
     await TestBed.configureTestingModule({
       declarations: [ FormComponent, ContainerComponent ],
       imports: [ReactiveFormsModule]
+
     })
     .compileComponents();
 
