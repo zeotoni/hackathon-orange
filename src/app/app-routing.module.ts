@@ -6,7 +6,13 @@ import { AddEventComponent } from './pages/add-event/add-event.component';
 const routes: Routes = [
   {
     path: '',
-    component: HomeComponent
+    redirectTo: 'home',
+    pathMatch: 'full'
+  },
+  {
+    path: 'home',
+    component: HomeComponent,
+    title: 'Agenda Tech'
   },
   {
     path: 'add-event',
