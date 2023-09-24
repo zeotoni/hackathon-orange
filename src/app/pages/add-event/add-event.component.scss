@@ -1,1 +1,27 @@
+section{
+  width: 300px;
+  margin: auto;
 
+  h1 {
+    color: #07029C;
+    font-size: 1.5rem;
+    font-weight: 400;
+    padding-bottom: 25px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  section{
+    width: 900px;
+    margin: auto;
+
+    h1 {
+      font-size: 2rem;
+    }
+
+    p {
+      font-size: 1.2rem;
+    }
+  }
+
+}

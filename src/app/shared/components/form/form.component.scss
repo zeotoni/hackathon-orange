@@ -1,90 +1,100 @@
 form {
-  margin: 0 auto;
-  display: block;
-  app-container {
+  width: 300px;
+  margin: auto;
+  padding: 48px 0;
 
-    .inner-container {
-      padding: 32px;
+  fieldset {
+    border: none;
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    padding-bottom: 30px;
+  }
 
-      fieldset {
-        border: none;
-        display: flex;
-        flex-wrap: wrap;
-        width: 80%;
-        padding-bottom: 30px;
+  legend, label {
+    color: #000;
+    font-size: 1rem;
+    font-weight: 400;
+    margin-bottom: 18px;
+  }
 
-        legend, label {
-          color: #000;
-          font-family: Roboto;
-          font-size: 24px;
-          font-weight: 400;
-          margin-bottom: 18px;
-        }
+  li {
+    list-style: none;
+    margin-right: 30px;
 
-        li {
-          list-style: none;
-          margin-right: 30px;
+    input, textarea {
+      width: 250px;
+      display: block;
+      margin: 10px 0 16px;
+      border-radius: 10px;
+      background: #F0F0F0;
+      padding: 17px;
+      border: none;
+      outline: none;
+      font-size: 0.875rem;
 
-          input, textarea {
-            display: block;
-            margin: 10px 0 16px;
-            border-radius: 10px;
-            background: #F0F0F0;
-            padding: 17px;
-            border: none;
-            outline: none;
-            font-size: 14px;
-
-            &.ng-invalid.ng-touched {
-              border: 2px solid red;
-            }
-
-            &::placeholder {
-              color: #585858;
-              font-family: Roboto;
-              font-size: 22px;
-              font-weight: 400;
-            }
-
-          }
-          .inputName {
-            width: 650px;
-          }
-
-          .inputImage {
-            width: 500px;
-          }
-        }
+      &.ng-invalid.ng-touched {
+        border: 2px solid red;
       }
 
-      .fildset-checkbox {
-        li {
-          display: flex;
-          flex-direction: row-reverse;
-          align-items: baseline;
-          gap: 10px;
-
-          input[type=checkbox] {
-            width: 18px;
-            height: 18px;
-          }
-        }
-      }
-
-      button {
-        border-radius: 10px;
-        padding: 13px 0;
-        width: 140px;
-        font-size: 20px;
-        font-weight: 700;
-        border: none;
-        color: #FFF;
-        margin-right: 20px;
-
-      }
-      .btn-add{
-        background-color: #177806;
+      &::placeholder {
+        color: #585858;
+        font-size: 1rem;
+        font-weight: 400;
       }
     }
   }
+
+  .fildset-checkbox {
+    display: flex;
+    flex-direction: column;
+    li {
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: flex-end;
+      align-items: baseline;
+      gap: 10px;
+
+      input[type=radio] {
+        width: 18px;
+        height: 18px;
+      }
+    }
+  }
+
+  button {
+    border-radius: 10px;
+    padding: 13px 0;
+    width: 140px;
+    font-size: 20px;
+    font-weight: 700;
+    border: none;
+    color: #FFF;
+    margin-right: 20px;
+    background-color: #177806;
+
+  }
 }
+
+@media screen and (min-width: 1024px) {
+
+  form {
+    width: 900px;
+
+    li {
+      textarea {
+        width: 300px;
+      }
+
+      input.inputName, input.inputImage, textarea {
+        &:first-of-type {
+          width: 600px;
+        }
+      }
+    }
+  }
+
+}
+
+
+
