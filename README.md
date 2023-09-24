@@ -1,27 +1,28 @@
-# Hackaton
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.2.2.
+<h1 align="center">Projeto Orange Juice Hackathon: Agenda Tech</h1>
+<p align="center">
+  <img src="https://img.shields.io/badge/Angular-DD0031?style=for-the-badge&logo=angular&logoColor=white">
+  <img src="https://img.shields.io/badge/Sass-CC6699?style=for-the-badge&logo=sass&logoColor=white">
+  <img src="https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white">
+  <img src="https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white">
+</p>
 
-## Development server
+<p>Bem vindos ao projeto AgendaTech. Esse projeto foi desenvolvido no Hachathon da Orange Juice e conta com o desafio de criar uma aplicação de informação sobre eventos de tecnologia.</p>
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+<h2>Desafio</h2>
+<br>
 
-## Code scaffolding
+* Responsividade 
+* Incluir eventos online, presenciais, pagos
+e gratuitos
+* Poder adicionar/excluir eventos
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+<h2>Equipe</h2>
 
-## Build
+* Matheus Gondra  https://www.linkedin.com/in/matheus-gondra-a187a81a3/
+* Daniela Salles  https://www.linkedin.com/in/danielasallesti/
+* Ezequiel Otoni  https://www.linkedin.com/in/zeotoni/
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+<h2>Acesso ao projeto</h2>
+<p>Para testar acesse: https://agenda-tech.vercel.app/home</p>
 
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
